@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: log4shell-demo
+  description: Log4Shell Demo
+  tags:
+  - app-accelerator
+  - java
+  - spring
+  - web
+  - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=log4shell-demo'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team

@@ -1,0 +1,45 @@
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-icon {
+    font-size: 10em;
+    line-height: 9rem;
+    white-space: nowrap;
+}
+
+.status {
+    font-size: 140%;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+}
+
+#powered-by {
+    margin-top: 0.8em;
+    margin-right: 1em;
+}
+
+#powered-by img {
+    margin-left: 0.1em;
+}
+
+.clr-row {
+    align-items: center;
+    justify-content: center;
+}
+
+.clr-col {
+    width: auto;
+    flex-grow: 0;
+}
+
+.title {
+    margin-left: 5px;
+}
+
+.github-fork-ribbon.right-bottom:before {
+    background-color: #333;
+}

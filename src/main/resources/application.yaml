@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: log4shell-demo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    com:
+      vmware:
+        tanzu:
+          demos: INFO

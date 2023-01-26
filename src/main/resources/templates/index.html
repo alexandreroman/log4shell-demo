@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/clr-ui.min.css"/>
+    <link rel="stylesheet" href="/gh-fork-ribbon.min.css"/>
+    <link href="/custom.css" rel="stylesheet">
+    <title>Log4Shell Demo</title>
+</head>
+
+<body>
+<div class="main-container">
+    <header class="header-6">
+        <div class="branding">
+            <a class="nav-link">
+                <span class="title">😱 Log4Shell Demo</span>
+            </a>
+        </div>
+        <div class="header-actions">
+            <div id="powered-by">Powered by<img width="145" height="38" src="/tap.png"
+                                                alt="VMware Tanzu Application Platform"/></div>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+            <div class="clr-row">
+                <div class="clr-col" th:switch="${status}">
+                    <span th:case="'UNPATCHED'">
+                        <span class="status-icon">💣</span>
+                        <div class="status">Upgrade your app now!</div>
+                    </span>
+                    <span th:case="'PATCHED'">
+                        <span class="status-icon">✅</span>
+                        <div class="status">You're safe... for now.</div>
+                    </span>
+                    <span th:case="'UNKNOWN'">
+                        <span class="status-icon">🤷</span>
+                        <div class="status">Sorry, I have no idea.</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/alexandreroman/log4shell-demo"
+   data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+</body>
+</html>
